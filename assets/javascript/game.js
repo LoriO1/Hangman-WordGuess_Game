@@ -211,3 +211,17 @@ function end() {
         }, 5000)
     }
 }
+
+$(document).ready(function(){
+    var _originalSize = $(window).width() + $(window).height()
+    $(window).resize(function(){
+        if($(window).width() + $(window).height() != _originalSize){
+            console.log("keyboard show up");
+        $(".copyright_link").css("position","relative");  
+        }
+        else{
+            console.log("keyboard closed");
+        $(".copyright_link").css("position","fixed");  
+        }
+    });
+});
