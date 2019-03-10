@@ -4,23 +4,107 @@
 <head>
     <!-- meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- browser fav icon and title bar info -->
+    <link rel="icon" href="assets/images/Hangman_noose-icon.png">
     <title>Hangman | Scary Movie Edition</title>
 
     <!-- style sheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
+    <!-- fonts -->
+    <!-- ***SEE CSS*** <link href="assets/fonts/BRLNSB.TTF" alt="Berlin Sans FB"> -->
+    
 </head>
 
 <body>
     <!-- header/nav masthead bar -->
+    <header id="masthead" class="container">
+        <div id="headerMainRow" class="row">
+            <div id="headerMainColLeft" class="col-md-12 col-lg-12 col-xl-12">
+                <div id="headerLogoRow" class="row">
+                    <div id="headerLogoCol" class="col-md-12 col-lg-12 col-xl-12">
+                        <a href="index.html" target="blank" alt="Hangman logo"><img src="assets/images/Hangman_logo.png"id="logo"></a>
+                        <img class="noose" src="assets/images/Hangman_noose.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </header>
 
     <!-- main body and content -->
-    <h1>Hello, world!</h1>
+    <div class="wrapper">
+        <div id="mainContainer" class="container">
+            <div class="row">
+                    <h2 id="startDisplay">submit a player name to start</h2>
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                    <div class="row">
+                        <!-- player info panel -->                        
+                        <div id="playerInfo" class="col-md-12 col-lg-12 col-xl-12">                            
+                            <div class="input-group mb-3">                               
+                                <!--player name form and submit button -->
+                                <form id="playerForm">
+                                    <div class="form-row align-items-center">
+                                        <div class="col-12">
+                                            <label class="sr-only" for="inlineFormInputGroupUsername">player name</label>
+                                            <div class="input-group">                                         
+                                                <input type="text" class="form-control" id="playername" placeholder="player name">         <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- scoreboard -->
+                            <div id="scoreboard" class="container">
+                                <label for="basic-url"><h3 id="WinsLosses">WINS & LOSSES</h3></label>
+                                <p>Wins: <span id="wins">0</span></p>
+                                <p>Losses: <span id="losses">0</span></p>                            
+                            </div>
+                            <!-- guesses remaining -->
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><h4 id="guesses">GUESSES LEFT</h4></span>
+                                </div>
+                                <span id="guessesRemaining">
+                                    <!-- pulls in countdown from JavaScript -->                                        
+                                </span>
+                            </div>                                                 
+                        </div>
+                    </div>                
+                </div>
+                <!-- gameInfo - ie movie title, related gif, underlines, spacing between words in a movie title, -->
+                <div class="col-md-9 col-lg-9 col-xl-9">
+                    <div class="row">
+                        <div id="gameInfo" class="col-md-12">
+                            <p><h3>movie title</h3></p>
+                                <div id="movie" class="titleUnderlinesSpaces">
+                                    <!-- spaces between underlines for words in a movie title - see CSS -->                                    
+                                </div>
+                                    <br/> 
+                                <div id="gifs"></div> 
+                            <p ><h3 id="wrongLetters">wrong letters already guessed</h3></p>                                
+                            <div id="spentLetters"></div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
 
-    <!-- sidebar -->
+        <!-- special div related to footer - DO NOT MOVE! -->
+        <div class="push"></div>
+        <!-- end special div -->
+
+    </div>    
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            &copy; 2019 Lori Orzechowski
+        </div>
+    </footer>
 
     <!-- JavaScript for Bootstrap-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -33,13 +117,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            &copy; 2019 Lori Orzechowski
-        </div>
-    </footer>
+    <!-- Hangman JavaScript-->    
+    <script src="assets/javascript/game.js"></script>
 
 </body>
 </html>

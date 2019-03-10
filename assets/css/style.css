@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* temporary border to better see work in progress
+    border: 1px solid black; */
+  }
+
+body {
+    font-family: "Berlin Sans FB";
+    src: url("/assets/fonts/BRLNSB.TTF");
+    font-size: 18px;
+    line-height: 34px;
+    color: #ffffff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff002b+37,ff002b+37,ab2125+100 */
+        background: #ff002b; /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, #ff002b 37%, #ff002b 37%, #ab2125 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, #ff002b 37%,#ff002b 37%,#ab2125 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, #ff002b 37%,#ff002b 37%,#ab2125 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff002b', endColorstr='#ab2125',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* HEADER */
+
+#headerMainRow {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#headerMainColLeft {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#headerLogoRow {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#headerLogoCol {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#logo {
+    position: fixed;
+    z-index: 999;
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+}
+
+.noose {
+    position: fixed;
+    z-index: 1000;
+    float: left;
+    width: auto;
+    height: 65%;
+    margin: 0px 0px 0px 0px;
+}
+
+#masthead { 
+    /* position: fixed; */
+    z-index: 1000;
+    height: 35%;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    /* overflow: auto; */
+    line-height: 20px;
+    top: 0;
+}
+
+.btn-primary {
+    color: black;
+    background-color: #cccccc;
+    border-color: #cccccc;
+    width: 75px;
+    margin-left: 10px;
+}
+
+.btn-primary:hover {
+    color: #cccccc;
+    background-color: black;
+    border-color: #666666;
+}
+
+#playername {
+    border-radius: 5px 5px 5px 5px !important;
+}
+
+#mainContainer {
+    position: absolute;  /* impacts my sticky header but if I turn it off, the noose is in front of my player info */
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+}
+
+#scoreboard {
+    width: 100%;
+    height: 175px;
+    background-color: black;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    margin: 0px 0px 20px 0px;
+    padding-top: 20px;
+}
+
+.input-group-text {
+    background-color: black;
+    border-color: #cccccc;
+    color: #cccccc;
+    border-radius: 8px 0px 0px 8px !important;
+}
+
+#guesses {
+    padding: 5px 0px 0px 0px;       
+}
+
+#guessesRemaining {
+    width: 30%;
+    background-color: #cccccc;
+    border-color: #cccccc;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#gameInfo {
+    width: 100%;
+    height: 500px;
+    background-color: #cccccc;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    margin-left: 20px;
+} 
+
+.titleUnderlinesSpaces {
+    letter-spacing: 8px;
+}
+
+#gifs {
+    z-index: 1000;
+    position: relative;
+    top: 0;
+
+}
+
+
+  /* FOOTER */
+
+footer {
+    padding: 30px 0;
+    clear: both;
+    font-size: 12px;
+    color: #fff;
+    color: #ccc;
+    text-align: center;
+    background: #666666;
+}
+  
+h3, h2 {
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid #eeeeee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* sticky footer */
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto -105px;
+}
+
+footer,
+.push 
+{
+    height: 105px;
+}
+/* END FOOTER */
+
+
+h2 {
+    font-weight: lighter;
+    line-height: 110%; 
+    width: 100%;
+    padding: 0% 0% 0% 27%;
+    color: black;
+    border-bottom: none;
+}
+
+h3 {
+    font-size: 36px;
+    padding-left: 1%;
+    color: black;
+    border-bottom: none;
+}
+
+#WinsLosses {
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    padding: 0px 0px 0px 0px;
+    color: #cccccc;
+    border-bottom: none;
+}
+
+p {
+    font-size: 20px;
+    line-height: 15px;
+    padding: 0px 0px 0px 0px;
+    color: #ffffff;
+}
+
+
+/* RESPONSIVENESS */
+body {
+    background-color: none;
+}
+    @media only screen and (max-width: 980px) {
+        #logo {
+            width: 80%;        
+        }
+        .noose {
+            height: 40%;
+        }
+        #masthead {
+            height: 30%;            
+        }
+        .input-group-text {
+            border-radius: 10px 10px 0px 0px !important;
+            width: 150px;
+        }    
+        #guessesRemaining {
+            border-radius: 0px 0px 10px 10px;
+            width: 150px;
+            padding: 5px 0px 5px 0px;
+        }
+        #guesses {
+            font-size: 20px;       
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #logo {
+            width: 90%;        
+        }
+        .noose {
+            height: 40%;
+        }
+        #masthead {
+            height: 30%;       
+        }
+        #gameInfo {
+            margin-left: 15px;
+        } 
+        .input-group-text {
+            border-radius: 10px 0px 0px 10px !important;
+            margin-bottom: 10px;
+        }    
+        #guessesRemaining {
+            border-radius: 0px 10px 10px 0px;
+            margin-bottom: 10px;
+            width: 358px;        
+        }
+        #guesses {
+            font-size: 20px;       
+        }
+        .push 
+        {
+            height: 1100px;
+        }
+        h2 {
+            padding-left: 175px;
+            font-size: 24px;
+        }
+    } 
+
+    @media only screen and (max-width: 640px) {
+        #logo {
+            width: 80%;        
+        }
+        .noose {
+            height: 25%;
+        }
+        #masthead {
+            height: 18%;        
+        }
+        #gameInfo {
+            margin-left: 0px;
+        } 
+        .input-group-text {
+            border-radius: 10px 0px 0px 10px !important;
+            margin-bottom: 10px;
+        }    
+        #guessesRemaining {
+            border-radius: 0px 10px 10px 0px;
+            margin-bottom: 10px;
+            width: 358px;        
+        }
+        #guesses {
+            font-size: 20px;       
+        }
+        .push 
+        {
+            height: 1100px;
+        }
+    }
