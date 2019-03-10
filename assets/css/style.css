@@ -126,7 +126,7 @@ body {
     font-size: 30px;
     text-align: center;
     padding-top: 8px;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 8px 8px 0px;
 }
 
 #gameInfo {
@@ -242,7 +242,7 @@ body {
             width: 150px;
         }    
         #guessesRemaining {
-            border-radius: 0px 0px 10px 10px;
+            border-radius: 0px 0px 8px 8px;
             width: 150px;
             padding: 5px 0px 5px 0px;
         }
@@ -265,13 +265,13 @@ body {
             margin-left: 15px;
         } 
         .input-group-text {
-            border-radius: 10px 0px 0px 10px !important;
-            margin-bottom: 10px;
-        }    
+            border-radius: 10px 10px 0px 0px !important;
+            width: 150px;
+        }  
         #guessesRemaining {
-            border-radius: 0px 10px 10px 0px;
-            margin-bottom: 10px;
-            width: 358px;        
+            border-radius: 0px 0px 8px 8px;
+            width: 150px;
+            padding: 5px 0px 5px 0px;
         }
         #guesses {
             font-size: 20px;       
@@ -304,9 +304,9 @@ body {
             margin-bottom: 10px;
         }    
         #guessesRemaining {
-            border-radius: 0px 10px 10px 0px;
+            border-radius: 0px 8px 8px 0px;
             margin-bottom: 10px;
-            width: 358px;        
+            width: 115px;        
         }
         #guesses {
             font-size: 20px;       
